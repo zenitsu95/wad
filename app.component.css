@@ -1,0 +1,19 @@
+input{
+ width: 400px;
+ height: 25px;
+ margin: 10px;
+ padding: 15px;
+ text-align: center;
+ background-color: aqua;
+ color:black;
+ text-shadow: 5%;
+
+}
+
+button{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+    color: crimson;
+    background-color: chartreuse;
+}
