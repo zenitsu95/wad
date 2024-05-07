@@ -1,0 +1,7 @@
+npm init
+create index.js file 
+npm install express --save
+create public folder
+inside the public folder create index.html 
+node index.js
+go to browser give the path like "localhost:4000"

@@ -1,0 +1,6 @@
+npm init
+create index.js
+and mongodb.js file
+ npm i mongodb
+npm i express
+node index.js

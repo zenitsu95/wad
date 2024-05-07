@@ -1,0 +1,49 @@
+1. Install Docker for Desktop/ Docker Toolbox as per your system support from below link. 
+    Docker Desktop (For Windows 10+ 64-bit) Download Link : https://dockr.ly/38BQNLT
+    Docker Toolbox (For Windows 7 or earlier 32-bit) Download Link : https://bit.ly/3lwZxpc
+
+  2. Install Nodejs from below link.
+    https://bit.ly/3ailfen
+
+  3. Add docker (from microsoft) extension in VS Code.
+
+
+ -Steps to Implement the Assignment:
+
+  Step-1: Create a folder (Note: Folder name should be in lowercase).  
+  Let the folder name be: partb
+
+  Step-2: Create any file with any extension( such as .js, .txt, .py, etc....) in the same above folder(Here, partb) and write some content in the file. 
+  Let the file name be: yogesh.js
+
+  The file contains the following code:
+  console.log("Name: Yogesh Borhade");
+  console.log("Class: TE");
+  console.log("Subject: LP-II Web Application Development");
+  console.log("We are implementing Assignment-2B");
+
+  Step-3: Create file in the same folder with file name as- Dockerfile and press enter key. (Note: Don't add any file extension after the file name)
+  File: Dockerfile 
+   
+  Step-4: Write following code in Dockerfile (Created in Step-3) and save it.:
+  FROM node: alpine
+  COPY . /partb
+  CMD node /partb/yogesh.js
+
+  Step-5: Open terminal in VS Code and type the following command:
+  docker --version
+
+  We will see the version of your docker if it is installed successfully. 
+
+  Step-6: In the same terminal in VS Code, type the following command:
+  node yogesh.js
+
+  It will display the contents in your file which is created in Step-2.
+
+  Step-7: In the same terminal in VS Code, type the following command:
+  docker build -t partb . 
+
+  We will see that it is successfully built. 
+
+  Step-8: In the same terminal in VS Code, type the following command:
+  docker images
